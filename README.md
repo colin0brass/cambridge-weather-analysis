@@ -1,3 +1,4 @@
+
 # Cambridge Weather Data Analysis
 
 This project downloads, caches, and visualizes mid-day temperature data for Cambridge, UK, using data from the University of Cambridge Computer Laboratory weather station.
@@ -7,6 +8,9 @@ This project downloads, caches, and visualizes mid-day temperature data for Camb
 - Only fetches missing or outdated data from the web
 - Robust error handling and progress reporting
 - Publication-quality polar plots with dual colorbars (Celsius and Fahrenheit)
+- Colorbars are now included within the page boundaries for publication-ready output
+- Reduced vertical gap between polar plots for a more compact layout
+- Larger, clearer colorbars for improved readability
 - Modular, well-documented code with type hints
 
 ## Requirements
@@ -35,10 +39,15 @@ Open the `cambridge_weather.ipynb` notebook in Jupyter or VS Code and run all ce
 ## Output
 - PNG images of the polar plots are saved in the `output/` directory:
 
-	output/CambridgeMidDayTemp_2002_2025.png  — Single-year polar plot
-	output/CambridgeMidDayTemps_2002_2025.png — Multi-year polar subplots
+    output/CambridgeMidDayTemp_2002_2025.png  — Single-year polar plot
+    output/CambridgeMidDayTemps_2002_2025.png — Multi-year polar subplots
 
 You can view the plots directly in the notebook output, or find the saved images in the `output/` folder after running all cells.
+
+**Layout improvements:**
+- Colorbars are now fully contained within the page size (`page_width_cm` × `page_height_cm`)
+- The vertical gap between polar plots has been reduced for a more compact grid
+- Colorbars are larger and easier to read
 
 ![Single-year polar plot](output/CambridgeMidDayTemp_2002_2025.png)
 
