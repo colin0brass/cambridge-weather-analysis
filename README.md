@@ -31,8 +31,18 @@ Open the `cambridge_weather.ipynb` notebook in Jupyter or VS Code and run all ce
 ## Data Source
 - [University of Cambridge Computer Laboratory Weather Data](https://www.cl.cam.ac.uk/research/dtg/weather/)
 
+
 ## Output
-- PNG images of the polar plots are saved in the working directory
+- PNG images of the polar plots are saved in the `output/` directory:
+
+	output/CambridgeMidDayTemp_2002_2025.png  — Single-year polar plot
+	output/CambridgeMidDayTemps_2002_2025.png — Multi-year polar subplots
+
+You can view the plots directly in the notebook output, or find the saved images in the `output/` folder after running all cells.
+
+![Single-year polar plot](output/CambridgeMidDayTemp_2002_2025.png)
+
+![Multi-year polar subplots](output/CambridgeMidDayTemps_2002_2025.png)
 
 ## Customization
 - Adjust the number of years, plot layout, or data directory by editing the parameters at the top of the notebook.
